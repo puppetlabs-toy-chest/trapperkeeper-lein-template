@@ -1,5 +1,5 @@
-(def tk-version "0.3.4-SNAPSHOT")
-(def ks-version "0.5.3-SNAPSHOT")
+(def tk-version "0.3.4")
+(def ks-version "0.5.3")
 
 (defproject {{raw-name}} "0.1.0-SNAPSHOT"
   :description "FIXME: write description"

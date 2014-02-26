@@ -1,2 +1,2 @@
-(defproject trapperkeeper/lein-template "0.1.0-SNAPSHOT"
+(defproject trapperkeeper/lein-template "0.1.0"
   :eval-in-leiningen true)
