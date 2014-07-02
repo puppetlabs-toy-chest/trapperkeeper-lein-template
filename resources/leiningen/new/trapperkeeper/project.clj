@@ -19,7 +19,7 @@
                                   [clj-http "0.7.9"]
                                   [ring-mock "0.1.5"]]}}
 
-  :aliases {"tk" ["trampoline" "run" "--config" "test-resources/config.ini"]}
+  :aliases {"tk" ["trampoline" "run" "--config" "test-resources/config.conf"]}
 
   :main puppetlabs.trapperkeeper.main
 

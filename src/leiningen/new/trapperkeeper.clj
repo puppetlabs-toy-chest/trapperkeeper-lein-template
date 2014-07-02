@@ -35,7 +35,7 @@ Accepts a group id in the project name: `lein new trapperkeeper foo.bar/baz`"
              ["test/{{nested-dirs}}_web_core_test.clj" (render "test/web_core_test.clj" data)]
              ["test/{{nested-dirs}}_web_service_test.clj" (render "test/web_service_test.clj" data)]
              ["test-resources/bootstrap.cfg" (render "test-resources/bootstrap.cfg" data)]
-             ["test-resources/config.ini" (render "test-resources/config.ini" data)]
+             ["test-resources/config.conf" (render "test-resources/config.conf" data)]
              ["test-resources/logback-dev.xml" (render "test-resources/logback-dev.xml" data)]
              ["test-resources/logback-test.xml" (render "test-resources/logback-test.xml" data)]
              "resources")))
