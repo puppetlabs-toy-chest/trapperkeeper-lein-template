@@ -4,7 +4,7 @@
             [puppetlabs.trapperkeeper.testutils.bootstrap :refer [with-app-with-config]]
             [puppetlabs.trapperkeeper.services.webserver.jetty9-service :refer [jetty9-service]]
             [puppetlabs.trapperkeeper.services.webrouting.webrouting-service :refer [webrouting-service]]
-            [puppetlabs.http.client.sync :as client]
+            [clj-http.client :as client]
             [{{namespace}}-service :as svc]
             [{{namespace}}-web-service :as web-svc]))
 

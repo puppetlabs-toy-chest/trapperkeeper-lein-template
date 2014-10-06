@@ -9,14 +9,14 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [compojure "1.1.9"]
                  [org.clojure/tools.logging "0.3.1"]
-                 [puppetlabs/trapperkeeper ~tk-version]]
+                 [puppetlabs/trapperkeeper ~tk-version]
+                 [puppetlabs/trapperkeeper-webserver-jetty9 "0.7.5"]]
 
   :test-paths ["test" "test-resources"]
 
-  :profiles {:dev {:dependencies [[puppetlabs/trapperkeeper-webserver-jetty9 "0.7.5"]
-                                  [puppetlabs/trapperkeeper ~tk-version :classifier "test" :scope "test"]
+  :profiles {:dev {:dependencies [[puppetlabs/trapperkeeper ~tk-version :classifier "test" :scope "test"]
                                   [puppetlabs/kitchensink ~ks-version :classifier "test" :scope "test"]
-                                  [puppetlabs/http-client "0.2.7"]
+                                  [clj-http "0.9.2"]
                                   [ring-mock "0.1.5"]]}}
 
   :aliases {"tk" ["trampoline" "run" "--config" "test-resources/config.conf"]}
