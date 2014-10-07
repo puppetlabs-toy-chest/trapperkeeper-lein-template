@@ -7,10 +7,10 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [compojure "1.1.9"]
+                 [compojure "1.2.0"]
                  [org.clojure/tools.logging "0.3.1"]
                  [puppetlabs/trapperkeeper ~tk-version]
-                 [puppetlabs/trapperkeeper-webserver-jetty9 "0.7.5"]]
+                 [puppetlabs/trapperkeeper-webserver-jetty9 "0.7.7"]]
 
   :test-paths ["test" "test-resources"]
 
