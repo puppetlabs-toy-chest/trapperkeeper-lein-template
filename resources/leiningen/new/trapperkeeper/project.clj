@@ -1,4 +1,4 @@
-(def tk-version "0.4.2")
+(def tk-version "0.5.1")
 (def ks-version "0.7.2")
 
 (defproject {{raw-name}} "0.1.0-SNAPSHOT"
@@ -7,14 +7,14 @@
   :license {:name "Eclipse Public License"
             :url "http://www.eclipse.org/legal/epl-v10.html"}
   :dependencies [[org.clojure/clojure "1.6.0"]
-                 [compojure "1.1.8"]
-                 [org.clojure/tools.logging "0.3.0"]
-                 [puppetlabs/trapperkeeper ~tk-version]]
+                 [compojure "1.2.0"]
+                 [org.clojure/tools.logging "0.3.1"]
+                 [puppetlabs/trapperkeeper ~tk-version]
+                 [puppetlabs/trapperkeeper-webserver-jetty9 "0.7.7"]]
 
   :test-paths ["test" "test-resources"]
 
-  :profiles {:dev {:dependencies [[puppetlabs/trapperkeeper-webserver-jetty9 "0.5.2"]
-                                  [puppetlabs/trapperkeeper ~tk-version :classifier "test" :scope "test"]
+  :profiles {:dev {:dependencies [[puppetlabs/trapperkeeper ~tk-version :classifier "test" :scope "test"]
                                   [puppetlabs/kitchensink ~ks-version :classifier "test" :scope "test"]
                                   [clj-http "0.9.2"]
                                   [ring-mock "0.1.5"]]}}
