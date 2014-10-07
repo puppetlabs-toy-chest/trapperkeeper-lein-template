@@ -1,4 +1,4 @@
-(defproject trapperkeeper/lein-template "0.1.2"
+(defproject trapperkeeper/lein-template "0.1.3-SNAPSHOT"
   :eval-in-leiningen true
 
   :deploy-repositories [["releases" {:url "https://clojars.org/repo"
