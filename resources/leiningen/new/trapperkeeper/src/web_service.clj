@@ -16,4 +16,12 @@
         this
         (compojure/context url-prefix []
           (core/app (tk-services/get-service this :HelloService))))
-      (assoc context :url-prefix url-prefix))))
+      (assoc context :url-prefix url-prefix)))
+
+  (start [this context]
+         (let [host (get-in-config [:webserver :host])
+               port (get-in-config [:webserver :port])
+               url-prefix (get-route this)]
+              (log/infof "Hello web service started; visit http://%s:%s%s/world to check it out!"
+                         host port url-prefix))
+         context))
