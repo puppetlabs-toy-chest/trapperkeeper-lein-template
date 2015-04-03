@@ -37,4 +37,5 @@ Accepts a group id in the project name: `lein new trapperkeeper foo.bar/baz`"
              ["dev-resources/config.conf" (render "dev-resources/config.conf" data)]
              ["dev-resources/logback-dev.xml" (render "dev-resources/logback-dev.xml" data)]
              ["dev-resources/logback-test.xml" (render "dev-resources/logback-test.xml" data)]
+             ["dev/user.clj" (render "user.clj" data)]
              "resources")))
