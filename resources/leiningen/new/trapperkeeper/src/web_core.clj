@@ -1,16 +1,15 @@
 (ns {{namespace}}-web-core
   (:require [{{namespace}}-service :as hello-svc]
             [clojure.tools.logging :as log]
-            [compojure.core :as compojure]
-            [compojure.route :as route]))
+            [puppetlabs.comidi :as comidi]))
 
 (defn app
   [hello-service]
-  (compojure/routes
-    (compojure/GET "/:caller" [caller]
+  (comidi/routes
+    (comidi/GET ["/" :caller] [caller]
       (fn [req]
         (log/info "Handling request for caller:" caller)
         {:status  200
          :headers {"Content-Type" "text/plain"}
          :body    (hello-svc/hello hello-service caller)}))
-    (route/not-found "Not Found")))
+    (comidi/not-found "Not Found")))
