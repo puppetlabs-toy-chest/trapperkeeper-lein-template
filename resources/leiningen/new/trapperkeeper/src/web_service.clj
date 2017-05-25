@@ -1,6 +1,6 @@
 (ns {{namespace}}-web-service
   (:require [clojure.tools.logging :as log]
-            [compojure.core :as compojure]
+            [puppetlabs.comidi :as comidi]
             [{{namespace}}-web-core :as core]
             [puppetlabs.trapperkeeper.core :as trapperkeeper]
             [puppetlabs.trapperkeeper.services :as tk-services]))
@@ -14,8 +14,9 @@
     (let [url-prefix (get-route this)]
       (add-ring-handler
         this
-        (compojure/context url-prefix []
-          (core/app (tk-services/get-service this :HelloService))))
+        (->> (core/app (tk-services/get-service this :HelloService))
+             (comidi/context url-prefix)
+             (comidi/routes->handler)))
       (assoc context :url-prefix url-prefix)))
 
   (start [this context]

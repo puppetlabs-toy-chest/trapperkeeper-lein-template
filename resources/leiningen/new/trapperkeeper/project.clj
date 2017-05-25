@@ -15,11 +15,12 @@
                  ;; explicit versions of deps that would cause transitive dep conflicts
                  [org.clojure/tools.reader "1.0.0-beta1"]
                  [slingshot "0.12.2"]
-                 [clj-time "0.9.0"]
+                 [clj-time "0.10.0"]
+                 [puppetlabs/kitchensink "1.3.0"]
+                 [org.clojure/tools.macro "0.1.5"]
                  ;; end explicit versions of deps that would cause transitive dep conflicts
 
-
-                 [compojure "1.5.0"]
+                 [puppetlabs/comidi "0.3.1"]
                  [org.clojure/tools.logging "0.3.1"]
                  [puppetlabs/trapperkeeper ~tk-version]
                  [puppetlabs/trapperkeeper-webserver-jetty9 ~tk-jetty9-version]]
