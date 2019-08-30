@@ -1,5 +1,7 @@
 # trapperkeeper-lein-template
 
+> The [trapperkeeper](https://github.com/puppetlabs/trapperkeeper) project is still being updated, but this repository is not being kept up-to-date. If you're interested in helping maintain it, let us know on the main trapperkeeper project.
+
 A Leiningen template for generating skeletal [Trapperkeeper](https://github.com/puppetlabs/trapperkeeper) applications.
 
 ## Usage
